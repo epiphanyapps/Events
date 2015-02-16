@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
+//#import <Parse/Parse.h>
 #import <MagicalRecord+Setup.h>
 
 @interface AppDelegate ()
@@ -25,6 +25,7 @@
 #pragma mark - Launch services
 
 - (void)launchServices:(NSDictionary *)launchOptions {
+  /*
     // [Optional] Power your app with Local Datastore. For more info, go to
     // https://parse.com/docs/ios_guide#localdatastore/iOS
     [Parse enableLocalDatastore];
@@ -34,7 +35,7 @@
                   clientKey:@"eW4Uco2qVyhhCTBJy58eyvakECUJvalfHRUI2HBC"];
     
     // [Optional] Track statistics around application opens.
-    
+  */
     
     
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Events.sqlite"];

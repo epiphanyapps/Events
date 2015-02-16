@@ -15,6 +15,16 @@
 		751E8C491A848C2300050ABC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751E8C481A848C2300050ABC /* Images.xcassets */; };
 		751E8C4C1A848C2300050ABC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751E8C4A1A848C2300050ABC /* LaunchScreen.xib */; };
 		751E8C581A848C2300050ABC /* EventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E8C571A848C2300050ABC /* EventsTests.m */; };
+		757DEF9D1A8663A400759C8B /* Resource+Importing.m in Sources */ = {isa = PBXBuildFile; fileRef = 757DEF9C1A8663A400759C8B /* Resource+Importing.m */; };
+		75CBE8D91A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 75CBE8D81A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf */; };
+		75CBE8DF1A8596B60048E431 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8DE1A8596B60048E431 /* Session.m */; };
+		75CBE8E21A8596B60048E431 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8E11A8596B60048E431 /* User.m */; };
+		75CBE8E51A8596B60048E431 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8E41A8596B60048E431 /* Resource.m */; };
+		75CBE8E91A8597390048E431 /* Session+Importing.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8E81A8597390048E431 /* Session+Importing.m */; };
+		75CBE8F21A8599650048E431 /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8F11A8599650048E431 /* Object.m */; };
+		75CBE8F51A8599A90048E431 /* Object+Importing.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8F41A8599A90048E431 /* Object+Importing.m */; };
+		75CEDE071A857230003E1713 /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDE051A857230003E1713 /* Events.xcdatamodeld */; };
+		75CEDE0A1A85745E003E1713 /* DataMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDE091A85745E003E1713 /* DataMigrator.m */; };
 		AE6FEA9AF08190F171C0FA1C /* libPods-Events.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A99B206509378821AFFEC6A /* libPods-Events.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +57,24 @@
 		751E8C511A848C2300050ABC /* EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		751E8C561A848C2300050ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		751E8C571A848C2300050ABC /* EventsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsTests.m; sourceTree = "<group>"; };
+		757DEF9B1A8663A400759C8B /* Resource+Importing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Resource+Importing.h"; sourceTree = "<group>"; };
+		757DEF9C1A8663A400759C8B /* Resource+Importing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Resource+Importing.m"; sourceTree = "<group>"; };
+		75CBE8D81A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NSHipster - Obscure Topics in Cocoa & Objective C.pdf"; sourceTree = "<group>"; };
+		75CBE8DD1A8596B60048E431 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		75CBE8DE1A8596B60048E431 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		75CBE8E01A8596B60048E431 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		75CBE8E11A8596B60048E431 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		75CBE8E31A8596B60048E431 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
+		75CBE8E41A8596B60048E431 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
+		75CBE8E71A8597390048E431 /* Session+Importing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Session+Importing.h"; sourceTree = "<group>"; };
+		75CBE8E81A8597390048E431 /* Session+Importing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Session+Importing.m"; sourceTree = "<group>"; };
+		75CBE8F01A8599650048E431 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		75CBE8F11A8599650048E431 /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
+		75CBE8F31A8599A90048E431 /* Object+Importing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Object+Importing.h"; sourceTree = "<group>"; };
+		75CBE8F41A8599A90048E431 /* Object+Importing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Object+Importing.m"; sourceTree = "<group>"; };
+		75CEDE061A857230003E1713 /* Events.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
+		75CEDE081A85745E003E1713 /* DataMigrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMigrator.h; sourceTree = "<group>"; };
+		75CEDE091A85745E003E1713 /* DataMigrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMigrator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +134,12 @@
 				751E8C401A848C2200050ABC /* FirstViewController.m */,
 				751E8C421A848C2200050ABC /* SecondViewController.h */,
 				751E8C431A848C2200050ABC /* SecondViewController.m */,
+				75CEDE081A85745E003E1713 /* DataMigrator.h */,
+				75CEDE091A85745E003E1713 /* DataMigrator.m */,
 				751E8C451A848C2300050ABC /* Main.storyboard */,
 				751E8C481A848C2300050ABC /* Images.xcassets */,
 				751E8C4A1A848C2300050ABC /* LaunchScreen.xib */,
+				75CBE8E61A8596C10048E431 /* Model */,
 				751E8C381A848C2200050ABC /* Supporting Files */,
 			);
 			path = Events;
@@ -147,6 +178,29 @@
 			);
 			name = Frameworks;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		75CBE8E61A8596C10048E431 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75CEDE051A857230003E1713 /* Events.xcdatamodeld */,
+				75CBE8F01A8599650048E431 /* Object.h */,
+				75CBE8F11A8599650048E431 /* Object.m */,
+				75CBE8F31A8599A90048E431 /* Object+Importing.h */,
+				75CBE8F41A8599A90048E431 /* Object+Importing.m */,
+				75CBE8E31A8596B60048E431 /* Resource.h */,
+				75CBE8E41A8596B60048E431 /* Resource.m */,
+				757DEF9B1A8663A400759C8B /* Resource+Importing.h */,
+				757DEF9C1A8663A400759C8B /* Resource+Importing.m */,
+				75CBE8E01A8596B60048E431 /* User.h */,
+				75CBE8E11A8596B60048E431 /* User.m */,
+				75CBE8DD1A8596B60048E431 /* Session.h */,
+				75CBE8DE1A8596B60048E431 /* Session.m */,
+				75CBE8E71A8597390048E431 /* Session+Importing.h */,
+				75CBE8E81A8597390048E431 /* Session+Importing.m */,
+				75CBE8D81A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		D5E17894421ADFCA4BCB877E /* Frameworks */ = {
@@ -242,6 +296,7 @@
 				751E8C471A848C2300050ABC /* Main.storyboard in Resources */,
 				751E8C4C1A848C2300050ABC /* LaunchScreen.xib in Resources */,
 				751E8C491A848C2300050ABC /* Images.xcassets in Resources */,
+				75CBE8D91A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +347,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CBE8F51A8599A90048E431 /* Object+Importing.m in Sources */,
+				75CBE8DF1A8596B60048E431 /* Session.m in Sources */,
 				751E8C441A848C2200050ABC /* SecondViewController.m in Sources */,
+				75CBE8E21A8596B60048E431 /* User.m in Sources */,
 				751E8C3E1A848C2200050ABC /* AppDelegate.m in Sources */,
+				757DEF9D1A8663A400759C8B /* Resource+Importing.m in Sources */,
 				751E8C411A848C2200050ABC /* FirstViewController.m in Sources */,
+				75CBE8F21A8599650048E431 /* Object.m in Sources */,
 				751E8C3B1A848C2200050ABC /* main.m in Sources */,
+				75CBE8E91A8597390048E431 /* Session+Importing.m in Sources */,
+				75CEDE0A1A85745E003E1713 /* DataMigrator.m in Sources */,
+				75CBE8E51A8596B60048E431 /* Resource.m in Sources */,
+				75CEDE071A857230003E1713 /* Events.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,10 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/waltermvp/Downloads/parse-library-1",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Events/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,10 +496,7 @@
 			baseConfigurationReference = 033500E3589116F311E3A1AA /* Pods-Events.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/waltermvp/Downloads/parse-library-1",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Events/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,6 +568,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75CEDE051A857230003E1713 /* Events.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75CEDE061A857230003E1713 /* Events.xcdatamodel */,
+			);
+			currentVersion = 75CEDE061A857230003E1713 /* Events.xcdatamodel */;
+			path = Events.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 751E8C2D1A848C2200050ABC /* Project object */;
 }
