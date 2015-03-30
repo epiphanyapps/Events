@@ -7,11 +7,10 @@
 //
 
 #import "DataMigrator.h"
-#import "Session+Importing.h"
-#import "Resource+Importing.h"
-#import "Object+Importing.h"
 #import <NSDate-Utilities.h>
 #import <CoreData+MagicalRecord.h>
+#import "Session.h"
+#import "Resource.h"
 
 @implementation DataMigrator
 

@@ -1,10 +1,32 @@
 PODS:
+  - AFNetworking (2.5.2):
+    - AFNetworking/NSURLConnection (= 2.5.2)
+    - AFNetworking/NSURLSession (= 2.5.2)
+    - AFNetworking/Reachability (= 2.5.2)
+    - AFNetworking/Security (= 2.5.2)
+    - AFNetworking/Serialization (= 2.5.2)
+    - AFNetworking/UIKit (= 2.5.2)
+  - AFNetworking/NSURLConnection (2.5.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.2):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.2)
+  - AFNetworking/Security (2.5.2)
+  - AFNetworking/Serialization (2.5.2)
+  - AFNetworking/UIKit (2.5.2):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - MagicalRecord (2.3.0-beta.5):
     - MagicalRecord/Core (= 2.3.0-beta.5)
   - MagicalRecord/Core (2.3.0-beta.5)
   - NSDate-Extensions (0.0.1)
 
 DEPENDENCIES:
+  - AFNetworking
   - MagicalRecord (from `https://github.com/magicalpanda/MagicalRecord.git`, branch `develop`)
   - NSDate-Extensions (~> 0.0.1)
 
@@ -19,7 +41,8 @@ CHECKOUT OPTIONS:
     :git: https://github.com/magicalpanda/MagicalRecord.git
 
 SPEC CHECKSUMS:
+  AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
   MagicalRecord: 6017a9417d767e75eb8132b8cb2c399fc4c0c80f
-  NSDate-Extensions: dcbef8675a9aed6d9dabfdcd4689300e177277d0
+  NSDate-Extensions: cbd68ecf5cf8a150644e184b4521d7734fea5ace
 
 COCOAPODS: 0.35.0

@@ -8,7 +8,6 @@
 
 #import "Resource+Importing.h"
 #import <CoreData+MagicalRecord.h>
-#import "Object+Importing.h"
 
 @implementation Resource (Importing)
 

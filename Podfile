@@ -8,7 +8,8 @@ target 'Events' do
     #    pod 'Parse'
     
     pod 'NSDate-Extensions', '~> 0.0.1' #For manipulating NSDates easily
-
+    #pod 'Alamofire'
+    pod 'AFNetworking'
 end
 
 target 'EventsTests' do
