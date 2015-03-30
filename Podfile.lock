@@ -27,7 +27,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - MagicalRecord (from `https://github.com/magicalpanda/MagicalRecord.git`, branch `develop`)
+  - MagicalRecord (from `https://github.com/magicalpanda/MagicalRecord.git`, branch
+    `develop`)
   - NSDate-Extensions (~> 0.0.1)
 
 EXTERNAL SOURCES:
@@ -42,7 +43,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
-  MagicalRecord: 6017a9417d767e75eb8132b8cb2c399fc4c0c80f
+  MagicalRecord: 32760b04d86a961b38fb29413780443212a1f62d
   NSDate-Extensions: cbd68ecf5cf8a150644e184b4521d7734fea5ace
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.36.1

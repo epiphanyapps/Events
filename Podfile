@@ -3,13 +3,13 @@
 
 target 'Events' do
     inhibit_all_warnings!
-
+    
     pod "MagicalRecord", :git => 'https://github.com/magicalpanda/MagicalRecord.git', :branch => 'develop'
     #    pod 'Parse'
     
     pod 'NSDate-Extensions', '~> 0.0.1' #For manipulating NSDates easily
-    #pod 'Alamofire'
     pod 'AFNetworking'
+    
 end
 
 target 'EventsTests' do
