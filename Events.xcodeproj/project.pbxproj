@@ -26,6 +26,7 @@
 		7558EF7B1AC8F66900EC0E17 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7558EF7A1AC8F66900EC0E17 /* UserCell.swift */; };
 		7558EF7D1AC8F70A00EC0E17 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7558EF7C1AC8F70A00EC0E17 /* UserCell.xib */; };
 		7558EF801AC918DC00EC0E17 /* SessionsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7558EF7F1AC918DC00EC0E17 /* SessionsTVC.swift */; };
+		7558EF821AC91E4100EC0E17 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7558EF811AC91E4100EC0E17 /* Alamofire.framework */; };
 		75CBE8D91A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 75CBE8D81A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf */; };
 		75CBE8DF1A8596B60048E431 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8DE1A8596B60048E431 /* Session.m */; };
 		75CBE8E51A8596B60048E431 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8E41A8596B60048E431 /* Resource.m */; };
@@ -79,6 +80,7 @@
 		7558EF7A1AC8F66900EC0E17 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		7558EF7C1AC8F70A00EC0E17 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		7558EF7F1AC918DC00EC0E17 /* SessionsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsTVC.swift; sourceTree = "<group>"; };
+		7558EF811AC91E4100EC0E17 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		75CBE8D81A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NSHipster - Obscure Topics in Cocoa & Objective C.pdf"; sourceTree = "<group>"; };
 		75CBE8DD1A8596B60048E431 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
 		75CBE8DE1A8596B60048E431 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7558EF821AC91E4100EC0E17 /* Alamofire.framework in Frameworks */,
 				40AFCB12328912A2AB70E3ED /* libPods-Events.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +241,7 @@
 		D5E17894421ADFCA4BCB877E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7558EF811AC91E4100EC0E17 /* Alamofire.framework */,
 				AE83905C98B56A40EF31075D /* libPods-Events.a */,
 			);
 			name = Frameworks;
@@ -523,7 +527,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Events/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -540,7 +547,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Events/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
