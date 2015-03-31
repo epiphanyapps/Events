@@ -9,7 +9,7 @@
 #import "Object+Importing.h"
 #import <MagicalRecord.h>
 
-@implementation Object (Importing)
+@implementation ParseObject (Importing)
 
 static NSDateFormatter *dateFormatter = nil;
 

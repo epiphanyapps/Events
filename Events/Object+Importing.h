@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Epiphany Apps. All rights reserved.
 //
 
-#import "Object.h"
+#import "ParseObject.h"
 
 NSString * const objectClassName = @"Object";
 
@@ -14,7 +14,7 @@ NSString * const createdAtKey = @"createdAt";
 NSString * const updatedAtKey = @"updatedAt";
 NSString * const objectIdKey = @"objectID";
 
-@interface Object (Importing)
+@interface ParseObject (Importing)
 
 - (void)updateObjectWithDict:(NSDictionary *)objectDict;
 

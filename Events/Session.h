@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "Object.h"
+#import "ParseObject.h"
 
 
-@interface Session : Object
+@interface Session : ParseObject
 
 @property (nonatomic, retain) NSDate * endDate;
 @property (nonatomic, retain) NSString * sessionDescription;

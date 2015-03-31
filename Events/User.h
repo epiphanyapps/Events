@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "Object.h"
+#import "ParseObject.h"
 
 
-@interface User : Object
+@interface User : ParseObject
 
 @property (nonatomic, retain) NSNumber * authenticated;
 @property (nonatomic, retain) NSNumber * emailVerified;

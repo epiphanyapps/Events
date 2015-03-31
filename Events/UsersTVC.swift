@@ -100,18 +100,14 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     
     func configureCell(cell: UserCell, atIndexPath indexPath: NSIndexPath) {
         let user = self.fetchedResultsController.objectAtIndexPath(indexPath) as User
-        cell.textLabel!.text = user.lastName
+        cell.nameLabel!.text = user.lastName
         
-        
-        let url = NSURL(string: user.largePickLink!)
+        let url = NSURL(string: user.mediumPicLink!)
         let placeholder = UIImage(named: "769-male")
         let request = NSURLRequest(URL: url!)
         
-        
         cell.thumbnailImageView.setImageWithURLRequest(request, placeholderImage: placeholder, success: { (request, response, image) -> Void in
             cell.thumbnailImageView.image = image
-            self.tableView.beginUpdates()
-            self.tableView.endUpdates()
         }) { (request, response, error) -> Void in
             
         }

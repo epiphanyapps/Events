@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "Object.h"
+#import "ParseObject.h"
 
-@interface Resource : Object
+@interface Resource : ParseObject
 
 @property (nonatomic, retain) NSData * data;
 @property (nonatomic, retain) NSString * title;

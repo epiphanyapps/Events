@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Epiphany Apps. All rights reserved.
 //
 
-#import "Object.h"
+#import "ParseObject.h"
 
 
-@implementation Object
+@implementation ParseObject
 
 @dynamic updatedAt;
 @dynamic createdAt;

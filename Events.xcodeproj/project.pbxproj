@@ -26,11 +26,12 @@
 		7558EF7B1AC8F66900EC0E17 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7558EF7A1AC8F66900EC0E17 /* UserCell.swift */; };
 		7558EF7D1AC8F70A00EC0E17 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7558EF7C1AC8F70A00EC0E17 /* UserCell.xib */; };
 		7558EF801AC918DC00EC0E17 /* SessionsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7558EF7F1AC918DC00EC0E17 /* SessionsTVC.swift */; };
-		7558EF821AC91E4100EC0E17 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7558EF811AC91E4100EC0E17 /* Alamofire.framework */; };
+		756E2FBE1ACA300F00D90003 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7558EF811AC91E4100EC0E17 /* Alamofire.framework */; };
+		756E2FBF1ACA300F00D90003 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7558EF811AC91E4100EC0E17 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75CBE8D91A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 75CBE8D81A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf */; };
 		75CBE8DF1A8596B60048E431 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8DE1A8596B60048E431 /* Session.m */; };
 		75CBE8E51A8596B60048E431 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8E41A8596B60048E431 /* Resource.m */; };
-		75CBE8F21A8599650048E431 /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8F11A8599650048E431 /* Object.m */; };
+		75CBE8F21A8599650048E431 /* ParseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8F11A8599650048E431 /* ParseObject.m */; };
 		75CEDE071A857230003E1713 /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDE051A857230003E1713 /* Events.xcdatamodeld */; };
 		75CEDE0A1A85745E003E1713 /* DataMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDE091A85745E003E1713 /* DataMigrator.m */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,20 @@
 			remoteInfo = Events;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		756E2FC01ACA300F00D90003 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				756E2FBF1ACA300F00D90003 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		033500E3589116F311E3A1AA /* Pods-Events.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.release.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,8 +101,8 @@
 		75CBE8DE1A8596B60048E431 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
 		75CBE8E31A8596B60048E431 /* Resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
 		75CBE8E41A8596B60048E431 /* Resource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resource.m; sourceTree = "<group>"; };
-		75CBE8F01A8599650048E431 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
-		75CBE8F11A8599650048E431 /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
+		75CBE8F01A8599650048E431 /* ParseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseObject.h; sourceTree = "<group>"; };
+		75CBE8F11A8599650048E431 /* ParseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseObject.m; sourceTree = "<group>"; };
 		75CEDE061A857230003E1713 /* Events.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Events.xcdatamodel; sourceTree = "<group>"; };
 		75CEDE081A85745E003E1713 /* DataMigrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMigrator.h; sourceTree = "<group>"; };
 		75CEDE091A85745E003E1713 /* DataMigrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMigrator.m; sourceTree = "<group>"; };
@@ -99,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7558EF821AC91E4100EC0E17 /* Alamofire.framework in Frameworks */,
+				756E2FBE1ACA300F00D90003 /* Alamofire.framework in Frameworks */,
 				40AFCB12328912A2AB70E3ED /* libPods-Events.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,8 +232,8 @@
 				7558EF3A1AC8DC0600EC0E17 /* RESTAPIClient.h */,
 				7558EF3B1AC8DC0600EC0E17 /* RESTAPIClient.m */,
 				75CEDE051A857230003E1713 /* Events.xcdatamodeld */,
-				75CBE8F01A8599650048E431 /* Object.h */,
-				75CBE8F11A8599650048E431 /* Object.m */,
+				75CBE8F01A8599650048E431 /* ParseObject.h */,
+				75CBE8F11A8599650048E431 /* ParseObject.m */,
 				7558EF271AC897F300EC0E17 /* Object+Importing.h */,
 				7558EF281AC897F300EC0E17 /* Object+Importing.m */,
 				75CBE8E31A8596B60048E431 /* Resource.h */,
@@ -259,6 +274,7 @@
 				751E8C321A848C2200050ABC /* Frameworks */,
 				751E8C331A848C2200050ABC /* Resources */,
 				0B0AE1521A33911FC71AA4EF /* Copy Pods Resources */,
+				756E2FC01ACA300F00D90003 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,7 +314,6 @@
 				TargetAttributes = {
 					751E8C341A848C2200050ABC = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = J7K4979T9B;
 					};
 					751E8C501A848C2300050ABC = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -391,7 +406,7 @@
 				7558EF2C1AC8981200EC0E17 /* Resource+Importing.m in Sources */,
 				7558EF7B1AC8F66900EC0E17 /* UserCell.swift in Sources */,
 				751E8C411A848C2200050ABC /* FirstViewController.m in Sources */,
-				75CBE8F21A8599650048E431 /* Object.m in Sources */,
+				75CBE8F21A8599650048E431 /* ParseObject.m in Sources */,
 				751E8C3B1A848C2200050ABC /* main.m in Sources */,
 				7558EF3C1AC8DC0600EC0E17 /* RESTAPIClient.m in Sources */,
 				7558EF431AC8E74E00EC0E17 /* UsersTVC.swift in Sources */,
@@ -526,7 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -534,7 +549,7 @@
 				INFOPLIST_FILE = Events/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "475ea09c-97b9-48bd-9f27-691502f802ee";
+				PROVISIONING_PROFILE = "1eb7f90c-f6f8-410c-b131-1c0aa78ae6f1";
 				SWIFT_OBJC_BRIDGING_HEADER = "Events/Events-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -546,7 +561,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

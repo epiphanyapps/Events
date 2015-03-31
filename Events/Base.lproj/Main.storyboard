@@ -86,7 +86,7 @@
         <scene sceneID="Z2y-15-inQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2fB-Og-jTo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Users" image="769-male" id="9Ib-yE-pPV"/>
+                    <tabBarItem key="tabBarItem" title="Users" image="769-male-selected" id="9Ib-yE-pPV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qWD-iz-CiJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -103,7 +103,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="769-male" width="28" height="28"/>
+        <image name="769-male-selected" width="28" height="28"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>

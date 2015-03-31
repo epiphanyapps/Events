@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@interface Object : NSManagedObject
+@interface ParseObject : NSManagedObject
 
 @property (nonatomic, retain) NSDate * updatedAt;
 @property (nonatomic, retain) NSDate * createdAt;
