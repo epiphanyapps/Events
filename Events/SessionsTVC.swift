@@ -21,12 +21,12 @@ class SessionsTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionInfo = self.fetchedResultsController.sections![section] as NSFetchedResultsSectionInfo
+        let sectionInfo = self.fetchedResultsController.sections![section] as! NSFetchedResultsSectionInfo
         return sectionInfo.numberOfObjects
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UserCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(UserCell.UserCellIdentifier(), forIndexPath: indexPath) as UserCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(UserCell.UserCellIdentifier(), forIndexPath: indexPath) as! UserCell
         self.configureCell(cell, atIndexPath: indexPath)
         return cell
     }
@@ -39,7 +39,7 @@ class SessionsTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             let context = self.fetchedResultsController.managedObjectContext
-            context.deleteObject(self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject)
+            context.deleteObject(self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject)
             
             var error: NSError? = nil
             if !context.save(&error) {
@@ -52,7 +52,7 @@ class SessionsTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     }
     
     func configureCell(cell: UserCell, atIndexPath indexPath: NSIndexPath) {
-        let user = self.fetchedResultsController.objectAtIndexPath(indexPath) as User
+        let user = self.fetchedResultsController.objectAtIndexPath(indexPath) as! User
         cell.textLabel!.text = user.lastName
         
         
@@ -130,7 +130,7 @@ class SessionsTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         case .Delete:
             tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
         case .Update:
-            var userCell = tableView.cellForRowAtIndexPath(indexPath!) as UserCell
+            var userCell = tableView.cellForRowAtIndexPath(indexPath!) as! UserCell
             self.configureCell(userCell, atIndexPath: indexPath!)
         case .Move:
             tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)

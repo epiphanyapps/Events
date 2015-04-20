@@ -25,6 +25,9 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableViewAutomaticDimension
         
+        let refreshControl = UIRefreshControl(frame: CGRectZero);
+        refreshControl.addTarget(self, action: Selector("updateUsers"), forControlEvents: .ValueChanged)
+        self.refreshControl = refreshControl;
     }
     
     // MARK: - UIViewController
@@ -36,7 +39,7 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
             let controllers = split.viewControllers
         }
     }
-
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.updateUsers()
@@ -50,14 +53,15 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     
     //MARK: - Network
     func updateUsers() {
-        UITableView.description();
         
         var dataTask = User.getRandomUsersWithNumber(5, withBlock: { (error) -> Void in
             if ((error) != nil) {
                 //show alert
+                
             } else {
                 NSLog("no errors")
             }
+            self.refreshControl?.endRefreshing()
         })
     }
     
@@ -68,12 +72,12 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionInfo = self.fetchedResultsController.sections![section] as NSFetchedResultsSectionInfo
+        let sectionInfo = self.fetchedResultsController.sections![section] as! NSFetchedResultsSectionInfo
         return sectionInfo.numberOfObjects
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UserCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(UserCell.UserCellIdentifier(), forIndexPath: indexPath) as UserCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(UserCell.UserCellIdentifier(), forIndexPath: indexPath) as! UserCell
         self.configureCell(cell, atIndexPath: indexPath)
         return cell
     }
@@ -86,7 +90,7 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             let context = self.fetchedResultsController.managedObjectContext
-            context.deleteObject(self.fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject)
+            context.deleteObject(self.fetchedResultsController.objectAtIndexPath(indexPath) as! NSManagedObject)
             
             var error: NSError? = nil
             if !context.save(&error) {
@@ -99,7 +103,7 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     }
     
     func configureCell(cell: UserCell, atIndexPath indexPath: NSIndexPath) {
-        let user = self.fetchedResultsController.objectAtIndexPath(indexPath) as User
+        let user = self.fetchedResultsController.objectAtIndexPath(indexPath) as! User
         cell.nameLabel!.text = user.lastName
         
         let url = NSURL(string: user.mediumPicLink!)
@@ -108,8 +112,8 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         
         cell.thumbnailImageView.setImageWithURLRequest(request, placeholderImage: placeholder, success: { (request, response, image) -> Void in
             cell.thumbnailImageView.image = image
-        }) { (request, response, error) -> Void in
-            
+            }) { (request, response, error) -> Void in
+                
         }
     }
     // MARK: - Fetched results controller
@@ -173,7 +177,7 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         case .Delete:
             tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)
         case .Update:
-            var userCell = tableView.cellForRowAtIndexPath(indexPath!) as UserCell
+            var userCell = tableView.cellForRowAtIndexPath(indexPath!) as! UserCell
             self.configureCell(userCell, atIndexPath: indexPath!)
         case .Move:
             tableView.deleteRowsAtIndexPaths([indexPath!], withRowAnimation: .Fade)

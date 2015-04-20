@@ -1,3 +1,1 @@
-# Require version 1.1 or later
-github "Alamofire/Alamofire" >= 1.1
-
+github "Alamofire/Alamofire" >= 1.2

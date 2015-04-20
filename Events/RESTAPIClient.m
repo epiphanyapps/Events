@@ -58,6 +58,16 @@ NSString *const passwordKey = @"password";
         completionHandler(NSURLSessionAuthChallengeUseCredential, [NSURLCredential credentialWithUser:userName password:passWord persistence:NSURLCredentialPersistenceNone]);
     }
     NSLog(@" didReceiveChallenge CHALLENGED");
+    
+    NSArray *array;
+    
+    
+    [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        //
+    }];
+    NSNumber *number = @10;
+    
+    array[0];
 }
 
 

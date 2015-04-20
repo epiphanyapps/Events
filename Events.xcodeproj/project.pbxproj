@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		40AFCB12328912A2AB70E3ED /* libPods-Events.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE83905C98B56A40EF31075D /* libPods-Events.a */; };
-		751E8C3B1A848C2200050ABC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E8C3A1A848C2200050ABC /* main.m */; };
-		751E8C3E1A848C2200050ABC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E8C3D1A848C2200050ABC /* AppDelegate.m */; };
+		751DDBF61AE4B66A0001D2F6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7558EF811AC91E4100EC0E17 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		751E8C411A848C2200050ABC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E8C401A848C2200050ABC /* FirstViewController.m */; };
 		751E8C441A848C2200050ABC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E8C431A848C2200050ABC /* SecondViewController.m */; };
 		751E8C471A848C2300050ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 751E8C451A848C2300050ABC /* Main.storyboard */; };
 		751E8C491A848C2300050ABC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 751E8C481A848C2300050ABC /* Images.xcassets */; };
 		751E8C4C1A848C2300050ABC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751E8C4A1A848C2300050ABC /* LaunchScreen.xib */; };
 		751E8C581A848C2300050ABC /* EventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 751E8C571A848C2300050ABC /* EventsTests.m */; };
+		752E4C101ACF476300E149C8 /* ParseRestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752E4C0F1ACF476300E149C8 /* ParseRestAPIClient.swift */; };
 		7558EF291AC897F300EC0E17 /* Object+Importing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7558EF281AC897F300EC0E17 /* Object+Importing.m */; };
 		7558EF2C1AC8981200EC0E17 /* Resource+Importing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7558EF2B1AC8981200EC0E17 /* Resource+Importing.m */; };
 		7558EF2F1AC8985C00EC0E17 /* Session+Importing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7558EF2E1AC8985C00EC0E17 /* Session+Importing.m */; };
@@ -26,8 +26,7 @@
 		7558EF7B1AC8F66900EC0E17 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7558EF7A1AC8F66900EC0E17 /* UserCell.swift */; };
 		7558EF7D1AC8F70A00EC0E17 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7558EF7C1AC8F70A00EC0E17 /* UserCell.xib */; };
 		7558EF801AC918DC00EC0E17 /* SessionsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7558EF7F1AC918DC00EC0E17 /* SessionsTVC.swift */; };
-		756E2FBE1ACA300F00D90003 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7558EF811AC91E4100EC0E17 /* Alamofire.framework */; };
-		756E2FBF1ACA300F00D90003 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7558EF811AC91E4100EC0E17 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7584E3921ADE287300A5A69C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7584E3911ADE287300A5A69C /* AppDelegate.swift */; };
 		75CBE8D91A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 75CBE8D81A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf */; };
 		75CBE8DF1A8596B60048E431 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8DE1A8596B60048E431 /* Session.m */; };
 		75CBE8E51A8596B60048E431 /* Resource.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CBE8E41A8596B60048E431 /* Resource.m */; };
@@ -47,13 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		756E2FC01ACA300F00D90003 /* Embed Frameworks */ = {
+		7584E38F1ADE1AEA00A5A69C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				756E2FBF1ACA300F00D90003 /* Alamofire.framework in Embed Frameworks */,
+				751DDBF61AE4B66A0001D2F6 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,9 +64,6 @@
 		097CB172CF0100BD8DDA98AC /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
 		751E8C351A848C2200050ABC /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		751E8C391A848C2200050ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		751E8C3A1A848C2200050ABC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		751E8C3C1A848C2200050ABC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		751E8C3D1A848C2200050ABC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		751E8C3F1A848C2200050ABC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		751E8C401A848C2200050ABC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		751E8C421A848C2200050ABC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -78,6 +74,8 @@
 		751E8C511A848C2300050ABC /* EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		751E8C561A848C2300050ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		751E8C571A848C2300050ABC /* EventsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsTests.m; sourceTree = "<group>"; };
+		752E4C0F1ACF476300E149C8 /* ParseRestAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseRestAPIClient.swift; sourceTree = "<group>"; };
+		752E4C151AD08C0D00E149C8 /* NetworkingPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = NetworkingPlayground.playground; sourceTree = "<group>"; };
 		7558EF271AC897F300EC0E17 /* Object+Importing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Object+Importing.h"; sourceTree = "<group>"; };
 		7558EF281AC897F300EC0E17 /* Object+Importing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Object+Importing.m"; sourceTree = "<group>"; };
 		7558EF2A1AC8981200EC0E17 /* Resource+Importing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Resource+Importing.h"; sourceTree = "<group>"; };
@@ -96,6 +94,7 @@
 		7558EF7C1AC8F70A00EC0E17 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		7558EF7F1AC918DC00EC0E17 /* SessionsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsTVC.swift; sourceTree = "<group>"; };
 		7558EF811AC91E4100EC0E17 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		7584E3911ADE287300A5A69C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75CBE8D81A8587FA0048E431 /* NSHipster - Obscure Topics in Cocoa & Objective C.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "NSHipster - Obscure Topics in Cocoa & Objective C.pdf"; sourceTree = "<group>"; };
 		75CBE8DD1A8596B60048E431 /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
 		75CBE8DE1A8596B60048E431 /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
@@ -114,7 +113,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				756E2FBE1ACA300F00D90003 /* Alamofire.framework in Frameworks */,
 				40AFCB12328912A2AB70E3ED /* libPods-Events.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,8 +159,7 @@
 		751E8C371A848C2200050ABC /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				751E8C3C1A848C2200050ABC /* AppDelegate.h */,
-				751E8C3D1A848C2200050ABC /* AppDelegate.m */,
+				7584E3911ADE287300A5A69C /* AppDelegate.swift */,
 				7558EF7F1AC918DC00EC0E17 /* SessionsTVC.swift */,
 				7558EF7E1AC918C200EC0E17 /* Users */,
 				751E8C3F1A848C2200050ABC /* FirstViewController.h */,
@@ -186,7 +183,6 @@
 			children = (
 				751E8C821A8493DC00050ABC /* Frameworks */,
 				751E8C391A848C2200050ABC /* Info.plist */,
-				751E8C3A1A848C2200050ABC /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,6 +225,8 @@
 		75CBE8E61A8596C10048E431 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				752E4C0F1ACF476300E149C8 /* ParseRestAPIClient.swift */,
+				752E4C151AD08C0D00E149C8 /* NetworkingPlayground.playground */,
 				7558EF3A1AC8DC0600EC0E17 /* RESTAPIClient.h */,
 				7558EF3B1AC8DC0600EC0E17 /* RESTAPIClient.m */,
 				75CEDE051A857230003E1713 /* Events.xcdatamodeld */,
@@ -274,7 +272,7 @@
 				751E8C321A848C2200050ABC /* Frameworks */,
 				751E8C331A848C2200050ABC /* Resources */,
 				0B0AE1521A33911FC71AA4EF /* Copy Pods Resources */,
-				756E2FC01ACA300F00D90003 /* Embed Frameworks */,
+				7584E38F1ADE1AEA00A5A69C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -314,6 +312,7 @@
 				TargetAttributes = {
 					751E8C341A848C2200050ABC = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = J7K4979T9B;
 					};
 					751E8C501A848C2300050ABC = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -400,20 +399,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				751E8C3E1A848C2200050ABC /* AppDelegate.m in Sources */,
 				7558EF2F1AC8985C00EC0E17 /* Session+Importing.m in Sources */,
 				751E8C441A848C2200050ABC /* SecondViewController.m in Sources */,
 				7558EF2C1AC8981200EC0E17 /* Resource+Importing.m in Sources */,
 				7558EF7B1AC8F66900EC0E17 /* UserCell.swift in Sources */,
 				751E8C411A848C2200050ABC /* FirstViewController.m in Sources */,
 				75CBE8F21A8599650048E431 /* ParseObject.m in Sources */,
-				751E8C3B1A848C2200050ABC /* main.m in Sources */,
+				7584E3921ADE287300A5A69C /* AppDelegate.swift in Sources */,
 				7558EF3C1AC8DC0600EC0E17 /* RESTAPIClient.m in Sources */,
 				7558EF431AC8E74E00EC0E17 /* UsersTVC.swift in Sources */,
 				75CEDE0A1A85745E003E1713 /* DataMigrator.m in Sources */,
 				7558EF391AC8DBAE00EC0E17 /* User.m in Sources */,
 				75CBE8DF1A8596B60048E431 /* Session.m in Sources */,
 				75CBE8E51A8596B60048E431 /* Resource.m in Sources */,
+				752E4C101ACF476300E149C8 /* ParseRestAPIClient.swift in Sources */,
 				7558EF291AC897F300EC0E17 /* Object+Importing.m in Sources */,
 				7558EF321AC8A14900EC0E17 /* User+Networking.m in Sources */,
 				7558EF801AC918DC00EC0E17 /* SessionsTVC.swift in Sources */,
@@ -476,7 +475,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -517,7 +515,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -541,7 +538,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -549,7 +545,6 @@
 				INFOPLIST_FILE = Events/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1eb7f90c-f6f8-410c-b131-1c0aa78ae6f1";
 				SWIFT_OBJC_BRIDGING_HEADER = "Events/Events-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -561,7 +556,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
