@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import UIKit
 
 extension Alamofire.Request {
     class func imageResponseSerializer() -> Serializer {

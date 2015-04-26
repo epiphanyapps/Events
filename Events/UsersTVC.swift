@@ -8,7 +8,9 @@
 
 import Foundation
 import UIKit
+import AlecrimCoreData
 import CoreData
+import EventsData
 
 class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     
@@ -53,7 +55,7 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     
     //MARK: - Network
     func updateUsers() {
-        
+        /*
         var dataTask = User.getRandomUsersWithNumber(5, withBlock: { (error) -> Void in
             if ((error) != nil) {
                 //show alert
@@ -63,6 +65,7 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
             }
             self.refreshControl?.endRefreshing()
         })
+*/
     }
     
     // MARK: - Table View
@@ -106,15 +109,16 @@ class UserTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         let user = self.fetchedResultsController.objectAtIndexPath(indexPath) as! User
         cell.nameLabel!.text = user.lastName
         
-        let url = NSURL(string: user.mediumPicLink!)
+        let url = NSURL(string: user.mediumPicLink)
         let placeholder = UIImage(named: "769-male")
         let request = NSURLRequest(URL: url!)
-        
+        /*
         cell.thumbnailImageView.setImageWithURLRequest(request, placeholderImage: placeholder, success: { (request, response, image) -> Void in
             cell.thumbnailImageView.image = image
             }) { (request, response, error) -> Void in
                 
         }
+*/
     }
     // MARK: - Fetched results controller
     

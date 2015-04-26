@@ -10,24 +10,27 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  
-  var window: UIWindow?
-
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
-    // Using Apperance Proxy to customize the theme of the app
-    UINavigationBar.appearance().barStyle = .BlackTranslucent
-    UINavigationBar.appearance().tintColor = UIColor.whiteColor()
     
-    UIToolbar.appearance().barStyle = .BlackTranslucent
-    UITabBar.appearance().barStyle = .Black
-    UITabBar.appearance().translucent = true
-    UITabBar.appearance().tintColor = UIColor.whiteColor()
+    var window: UIWindow?
     
-    UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        self .setAppeareance()
+        return true
+    }
     
-    UIButton.appearance().tintColor = UIColor.whiteColor()
-    
-    return true
-  }
+    func setAppeareance() {
+        // Using Apperance Proxy to customize the theme of the app
+        UINavigationBar.appearance().barStyle = .BlackTranslucent
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        
+        UIToolbar.appearance().barStyle = .BlackTranslucent
+        UITabBar.appearance().barStyle = .Black
+        UITabBar.appearance().translucent = true
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
+        
+        UIBarButtonItem.appearance().tintColor = UIColor.whiteColor()
+        
+        UIButton.appearance().tintColor = UIColor.whiteColor()
+    }
 }
 

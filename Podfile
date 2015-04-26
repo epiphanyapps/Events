@@ -4,15 +4,31 @@
 target 'Events' do
     inhibit_all_warnings!
     
+    use_frameworks!
+    
+
     pod "MagicalRecord", :git => 'https://github.com/magicalpanda/MagicalRecord.git', :branch => 'develop'
     #    pod 'Parse'
     
     pod 'NSDate-Extensions', '~> 0.0.1' #For manipulating NSDates easily
-    pod 'AFNetworking'
     
 end
 
 target 'EventsTests' do
 
 end
+
+target 'EventsData' do
+    use_frameworks!
+
+    pod 'AlecrimCoreData', '~> 3.0-beta.6'
+
+end
+
+
+target 'EventsDataTests' do
+    
+    
+end
+
 

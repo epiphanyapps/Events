@@ -7,13 +7,16 @@
 //
 
 import Foundation
+import UIKit
+import CoreData
+import EventsData
 
 class SessionsTVC: UITableViewController, NSFetchedResultsControllerDelegate {
     
     override func viewDidLoad() {
         //
     }
-
+    
     // MARK: - Table View
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -56,18 +59,19 @@ class SessionsTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         cell.textLabel!.text = user.lastName
         
         
-        let url = NSURL(string: user.largePickLink!)
+        let url = NSURL(string: user.largePickLink)
         let placeholder = UIImage(named: "769-male")
         let request = NSURLRequest(URL: url!)
         
-        
+        /*
         cell.thumbnailImageView.setImageWithURLRequest(request, placeholderImage: placeholder, success: { (request, response, image) -> Void in
-            cell.thumbnailImageView.image = image
-            self.tableView.beginUpdates()
-            self.tableView.endUpdates()
-            }) { (request, response, error) -> Void in
-                
+        cell.thumbnailImageView.image = image
+        self.tableView.beginUpdates()
+        self.tableView.endUpdates()
+        }) { (request, response, error) -> Void in
+        
         }
+        */
     }
     // MARK: - Fetched results controller
     
@@ -92,7 +96,7 @@ class SessionsTVC: UITableViewController, NSFetchedResultsControllerDelegate {
         
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
-        let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: NSManagedObjectContext.MR_defaultContext()!, sectionNameKeyPath: nil, cacheName: "Master")
+        let aFetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: dataContext, sectionNameKeyPath: nil, cacheName: "Master")
         aFetchedResultsController.delegate = self
         _fetchedResultsController = aFetchedResultsController
         
