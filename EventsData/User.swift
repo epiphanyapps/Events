@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 public class User: ParseObject {
-
+    
     @NSManaged var authenticated: NSNumber
     @NSManaged var cell: String
     @NSManaged var dob: NSDate
@@ -29,5 +29,23 @@ public class User: ParseObject {
     @NSManaged var snn: String
     @NSManaged var thumbnailPicLink: String
     @NSManaged var userName: String
-
+    
+    public init(context: NSManagedObjectContext,
+        firstName: String,
+        lastName: String,
+        dob: NSDate,
+        email: String,
+        sha256: String) {
+            
+            let entity = NSEntityDescription.entityForName(EventsModelEntity.User, inManagedObjectContext: context)!
+            super.init(entity: entity, insertIntoManagedObjectContext: context)
+            
+            self.firstName = firstName
+            self.lastName = lastName
+            self.dob = dob
+            self.email = email
+            self.sha256 = sha256
+    }
+    
 }
+

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="ParseObject" representedClassName="ParseObject" syncable="YES">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ParseObject" representedClassName="EventsData.ParseObject" syncable="YES">
         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="parseObjectId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
-    <entity name="Resource" representedClassName="Resource" parentEntity="ParseObject" syncable="YES">
+    <entity name="Resource" representedClassName="EventsData.Resource" parentEntity="ParseObject" syncable="YES">
         <attribute name="data" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
         <attribute name="resourceDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Session" representedClassName="Session" parentEntity="ParseObject" syncable="YES">
+    <entity name="Session" representedClassName="EventsData.Session" parentEntity="ParseObject" syncable="YES">
         <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="sessionDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="User" representedClassName="User" parentEntity="ParseObject" syncable="YES">
+    <entity name="User" representedClassName="EventsData.User" parentEntity="ParseObject" syncable="YES">
         <attribute name="authenticated" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="cell" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dob" optional="YES" attributeType="Date" syncable="YES"/>
@@ -37,9 +37,9 @@
         <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="ParseObject" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Resource" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Session" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="User" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ParseObject" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Resource" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Session" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="User" positionX="0" positionY="0" width="128" height="315"/>
     </elements>
 </model>
