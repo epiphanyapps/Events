@@ -13,7 +13,6 @@
 		755D04571AED2F7800541640 /* EventsDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D04561AED2F7800541640 /* EventsDataTests.swift */; };
 		755D045A1AED2F7800541640 /* EventsData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755D04431AED2F7800541640 /* EventsData.framework */; };
 		755D045B1AED2F7800541640 /* EventsData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 755D04431AED2F7800541640 /* EventsData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		755D04641AED2FAB00541640 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755D04631AED2FAB00541640 /* Alamofire.framework */; };
 		755D04681AED30B400541640 /* Events.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 755D04661AED30B400541640 /* Events.xcdatamodeld */; };
 		755D046A1AED30CE00541640 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D04691AED30CE00541640 /* User.swift */; };
 		755D046C1AED30CF00541640 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D046B1AED30CF00541640 /* Resource.swift */; };
@@ -28,6 +27,10 @@
 		75D339461AECDE4D00D46E36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D339451AECDE4D00D46E36 /* Images.xcassets */; };
 		75D339491AECDE4D00D46E36 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75D339471AECDE4D00D46E36 /* LaunchScreen.xib */; };
 		75D339551AECDE4D00D46E36 /* EventsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D339541AECDE4D00D46E36 /* EventsTests.swift */; };
+		75E1ED621AF6EDBC0002F9E7 /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1ED611AF6EDBC0002F9E7 /* Parse.swift */; };
+		75E1ED641AF6F3610002F9E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755D04631AED2FAB00541640 /* Alamofire.framework */; };
+		75E1ED651AF6F3610002F9E7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 755D04631AED2FAB00541640 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		75E1ED661AF6F3800002F9E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755D04631AED2FAB00541640 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				757DC49E1AF6A812009490D3 /* JSQCoreDataKit.framework in Embed Frameworks */,
+				75E1ED651AF6F3610002F9E7 /* Alamofire.framework in Embed Frameworks */,
 				755D045B1AED2F7800541640 /* EventsData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -104,6 +108,7 @@
 		75D339531AECDE4D00D46E36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D339541AECDE4D00D46E36 /* EventsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTests.swift; sourceTree = "<group>"; };
 		75E1ED5C1AF6E2490002F9E7 /* Events.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Events.entitlements; sourceTree = "<group>"; };
+		75E1ED611AF6EDBC0002F9E7 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755D04641AED2FAB00541640 /* Alamofire.framework in Frameworks */,
+				75E1ED661AF6F3800002F9E7 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				755D045A1AED2F7800541640 /* EventsData.framework in Frameworks */,
+				75E1ED641AF6F3610002F9E7 /* Alamofire.framework in Frameworks */,
 				75000F201AF6A32100132334 /* JSQCoreDataKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				755D04471AED2F7800541640 /* EventsData.h */,
+				75E1ED611AF6EDBC0002F9E7 /* Parse.swift */,
 				755D04711AED30D800541640 /* Model */,
 				755D04631AED2FAB00541640 /* Alamofire.framework */,
 				75000F1C1AF69E4200132334 /* JSQCoreDataKit.framework */,
@@ -438,6 +445,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/JSQCoreDataKit.framework",
 			);
 			outputPaths = (
 			);
@@ -454,6 +462,7 @@
 			files = (
 				755D04701AED30CF00541640 /* ParseObject.swift in Sources */,
 				757DC4A21AF6AA0D009490D3 /* ModelUtils.swift in Sources */,
+				75E1ED621AF6EDBC0002F9E7 /* Parse.swift in Sources */,
 				755D046E1AED30CF00541640 /* Session.swift in Sources */,
 				755D046C1AED30CF00541640 /* Resource.swift in Sources */,
 				755D046A1AED30CE00541640 /* User.swift in Sources */,
@@ -704,6 +713,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Events/Events.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -719,6 +729,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Events/Events.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
