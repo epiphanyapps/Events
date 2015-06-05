@@ -17,12 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
         Alamofire.request(Router.GetSession(""))
-            .response { (request, response, data, error) in
+                .response { (request, response, data, error) in
                 println(request)
                 println(response)
                 println(error)
+        }.responseString(encoding: NSUTF8StringEncoding) { (request, response, string, error) -> Void in
+            println(string)
         }
         
         

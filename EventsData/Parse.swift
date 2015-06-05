@@ -12,7 +12,7 @@ import Alamofire
 enum Router: URLRequestConvertible {
     static let appID = "u6Rlod4Kp8GiC4kxsU9csu3rLCYlcazuM9JhiKEj"
     static let myJavaScriptKey = "BcMkLH28sCJyM3eNzNrd4usAwiT5XvbgopmQvgtm"
-
+    static let RESTAPIKey = "myLgKR5MKajNZKeRc2BNODpoJdYh7mpIhscnEAGL"
     static let baseURLString = "https://api.parse.com/1/"
     static var OAuthToken: String?
     
@@ -58,14 +58,16 @@ enum Router: URLRequestConvertible {
         let URL = NSURL(string: Router.baseURLString)!
         let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
         mutableURLRequest.HTTPMethod = method.rawValue
-        mutableURLRequest.setValue("u6Rlod4Kp8GiC4kxsU9csu3rLCYlcazuM9JhiKEj", forHTTPHeaderField: "X-Parse-Application-Id")
-        mutableURLRequest.setValue("BcMkLH28sCJyM3eNzNrd4usAwiT5XvbgopmQvgtm", forHTTPHeaderField: "X-Parse-REST-API-Key")
+        mutableURLRequest.setValue(Router.appID, forHTTPHeaderField: "X-Parse-Application-Id")
+        mutableURLRequest.setValue(Router.RESTAPIKey, forHTTPHeaderField: "X-Parse-REST-API-Key")
         
 //        if let token = Router.OAuthToken {
 //            mutableURLRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
 //        }
         
         switch self {
+        case .GetSession(let parameters):
+            return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: nil).0
         case .CreateUser(let parameters):
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
         case .UpdateUser(_, let parameters):
