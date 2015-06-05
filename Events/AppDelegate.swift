@@ -13,24 +13,17 @@ import Alamofire
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-
         
-        Alamofire.request(.GET, "http://httpbin.org/get")
-            .authenticate(user: "user", password: "password")
-            .progress { (bytesRead, totalBytesRead, totalBytesExpectedToRead) in
-              //   println(totalBytesRead)
-            }
-            .responseJSON { (request, response, JSON, error) in
-                println(JSON)
-            }
-            .responseString { (request, response, string, error) in
-             //   println(string)
+        Alamofire.request(Router.GetSession(""))
+            .response { (request, response, data, error) in
+                println(request)
+                println(response)
+                println(error)
         }
-
         
         
         return true

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		75000F201AF6A32100132334 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75000F1C1AF69E4200132334 /* JSQCoreDataKit.framework */; };
+		7510E59E1B2174A0009A294E /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1ED611AF6EDBC0002F9E7 /* Parse.swift */; };
 		755D04481AED2F7800541640 /* EventsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 755D04471AED2F7800541640 /* EventsData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		755D044E1AED2F7800541640 /* EventsData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755D04431AED2F7800541640 /* EventsData.framework */; };
 		755D04571AED2F7800541640 /* EventsDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755D04561AED2F7800541640 /* EventsDataTests.swift */; };
@@ -482,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7510E59E1B2174A0009A294E /* Parse.swift in Sources */,
 				75D339411AECDE4D00D46E36 /* SecondViewController.swift in Sources */,
 				75D3393D1AECDE4D00D46E36 /* AppDelegate.swift in Sources */,
 				75D3393F1AECDE4D00D46E36 /* FirstViewController.swift in Sources */,
