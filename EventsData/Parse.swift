@@ -66,7 +66,7 @@ enum Router: URLRequestConvertible {
 //        }
         
         switch self {
-        case .GetSession(let parameters):
+        case .GetSession( _):
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: nil).0
         case .CreateUser(let parameters):
             return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0

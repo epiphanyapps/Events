@@ -3,7 +3,7 @@
 import Cocoa
 
 var optionalString: String? = "Hello"
-println(optionalString == nil)
+print(optionalString == nil, appendNewline: false)
 
 var optionalName: String? = nil
 var greeting = "Hello!"
@@ -22,5 +22,4 @@ case "cucumber", "watercress":
 case let x where x.hasSuffix("pepper"):
     let vegetableComment = "Is it a spicy \(x)?"
 default:
-    let vegetableComment = "Everything tastes good in soup."
-}
+    let vegetableComment = "Everything ta

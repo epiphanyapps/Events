@@ -19,11 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Alamofire.request(Router.GetSession(""))
                 .response { (request, response, data, error) in
-                println(request)
-                println(response)
-                println(error)
+                print(request)
+                print(response)
+                print(error)
         }.responseString(encoding: NSUTF8StringEncoding) { (request, response, string, error) -> Void in
-            println(string)
+            print(string)
         }
         
         
