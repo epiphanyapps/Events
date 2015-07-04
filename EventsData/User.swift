@@ -37,14 +37,14 @@ public class User: ParseObject {
         email: String,
         sha256: String) {
             
-            let entity = NSEntityDescription.entityForName(EventsModelEntity.User, inManagedObjectContext: context)!
+            let entity = NSEntityDescription.entityForName("User", inManagedObjectContext: context)!
             super.init(entity: entity, insertIntoManagedObjectContext: context)
-            
-            self.firstName = firstName
-            self.lastName = lastName
-            self.dob = dob
-            self.email = email
-            self.sha256 = sha256
+//            
+//            self.firstName = firstName
+//            self.lastName = lastName
+//            self.dob = dob
+//            self.email = email
+//            self.sha256 = sha256
     }
     
 }
