@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-enum Router: URLRequestConvertible {
+enum ParseRouter: URLRequestConvertible {
     static let appID = "u6Rlod4Kp8GiC4kxsU9csu3rLCYlcazuM9JhiKEj"
     static let myJavaScriptKey = "BcMkLH28sCJyM3eNzNrd4usAwiT5XvbgopmQvgtm"
     static let RESTAPIKey = "myLgKR5MKajNZKeRc2BNODpoJdYh7mpIhscnEAGL"
@@ -55,11 +55,11 @@ enum Router: URLRequestConvertible {
     // MARK: URLRequestConvertible
     
     var URLRequest: NSURLRequest {
-        let URL = NSURL(string: Router.baseURLString)!
+        let URL = NSURL(string: ParseRouter.baseURLString)!
         let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
         mutableURLRequest.HTTPMethod = method.rawValue
-        mutableURLRequest.setValue(Router.appID, forHTTPHeaderField: "X-Parse-Application-Id")
-        mutableURLRequest.setValue(Router.RESTAPIKey, forHTTPHeaderField: "X-Parse-REST-API-Key")
+        mutableURLRequest.setValue(ParseRouter.appID, forHTTPHeaderField: "X-Parse-Application-Id")
+        mutableURLRequest.setValue(ParseRouter.RESTAPIKey, forHTTPHeaderField: "X-Parse-REST-API-Key")
         
 //        if let token = Router.OAuthToken {
 //            mutableURLRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")

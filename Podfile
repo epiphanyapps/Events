@@ -22,10 +22,11 @@ end
 target 'EventsData' do
 
     pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'swift-2.0'
-    
+#    pod 'AlecrimCoreData'
+
 end
 
 target 'EventsDataTests' do
 
-end
+endr
 
