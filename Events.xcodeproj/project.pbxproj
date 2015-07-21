@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750D68961B5E6F2B00E11917 /* UsersTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750D68951B5E6F2B00E11917 /* UsersTVC.swift */; };
 		7510E59E1B2174A0009A294E /* Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E1ED611AF6EDBC0002F9E7 /* Parse.swift */; };
 		7551ACB11B46DD28003EFA2C /* EventsData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 755D04431AED2F7800541640 /* EventsData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		755AA0991B4851C600AED032 /* EventsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755AA0981B4851C600AED032 /* EventsData.swift */; };
@@ -80,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		04A27B9DFCF41A1C7D2D796E /* Pods_EventsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750D68951B5E6F2B00E11917 /* UsersTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTVC.swift; sourceTree = "<group>"; };
 		755AA0981B4851C600AED032 /* EventsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsData.swift; sourceTree = "<group>"; };
 		755D04431AED2F7800541640 /* EventsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		755D04461AED2F7800541640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			children = (
 				75E1ED5C1AF6E2490002F9E7 /* Events.entitlements */,
 				75D3393C1AECDE4D00D46E36 /* AppDelegate.swift */,
+				750D68951B5E6F2B00E11917 /* UsersTVC.swift */,
 				75D3393E1AECDE4D00D46E36 /* FirstViewController.swift */,
 				75D339401AECDE4D00D46E36 /* SecondViewController.swift */,
 				75D339421AECDE4D00D46E36 /* Main.storyboard */,
@@ -573,6 +576,7 @@
 			files = (
 				7510E59E1B2174A0009A294E /* Parse.swift in Sources */,
 				75D339411AECDE4D00D46E36 /* SecondViewController.swift in Sources */,
+				750D68961B5E6F2B00E11917 /* UsersTVC.swift in Sources */,
 				75D3393D1AECDE4D00D46E36 /* AppDelegate.swift in Sources */,
 				75E464CD1B5CBE9C007E7531 /* RandonUserAPI.swift in Sources */,
 				75D3393F1AECDE4D00D46E36 /* FirstViewController.swift in Sources */,

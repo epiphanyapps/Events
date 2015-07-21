@@ -28,5 +28,5 @@ end
 
 target 'EventsDataTests' do
 
-endr
+end
 
