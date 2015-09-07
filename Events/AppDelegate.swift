@@ -16,7 +16,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        /*
+        Alamofire.request(ParseRouter.GetSession("vWaEHOcikH"))
+            .responseJSON { _, _, result in
+                switch result {
+                case Result.Success(let value):
+                    print("value \(value) end value")
+                case .Failure(let data, let error):
+                    print("data : \(data) - error \(error)")
+                    
+                }
+        }
+
+        Alamofire.request(ParseRouter.GetSession(nil))
+            .responseJSON { _, _, result in
+                switch result {
+                case Result.Success(let value):
+                    print("value \(value) end value")
+                case .Failure(let data, let error):
+                    print("data : \(data) - error \(error)")
+                    
+                }
+        }
+*/
+        /*
+
+        Alamofire.request(ParseRouter.CreateSession(["String": "name"]))
+                .responseJSON { (__, _, result) -> Void in
+                    print("aya \(result)")
+                    //
+        }
+*/
+        Alamofire.request(ParseRouter.DestroySession("YlAg6P4r1c"))
+                    .responseJSON { (_, _, result) -> Void in
+                        print("did delete \(result)")
+        }
         
         return true
     }
