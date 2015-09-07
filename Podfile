@@ -10,7 +10,7 @@ inhibit_all_warnings!
 
 target 'Events' do
 
-    pod 'JSQMessagesViewController'
+#    pod 'JSQMessagesViewController'
     pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'swift-2.0'
 
 end

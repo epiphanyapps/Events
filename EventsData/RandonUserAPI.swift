@@ -30,7 +30,7 @@ enum RandomUserRouter : URLRequestConvertible {
     
     // MARK: URLRequestConvertible
     
-    var URLRequest: NSURLRequest {
+    var URLRequest: NSMutableURLRequest {
         let URL = NSURL(string: RandomUserRouter.baseURLString)!
         let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
         mutableURLRequest.HTTPMethod = method.rawValue

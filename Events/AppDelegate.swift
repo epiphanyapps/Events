@@ -17,19 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        Alamofire.request(ParseRouter.GetSession(""))
-                .response { (request, response, data, error) in
-//                print(request)
-//                print(response)
-//                print(error)
-        }.responseString(encoding: NSUTF8StringEncoding) { (request, response, string, error) -> Void in
-            print(string)
-        }
-        
-        Alamofire.request(RandomUserRouter.GetUser)
-        .responseJSON { (request, response, JSON, error) -> Void in
-            print(JSON)
-        }
         
         return true
     }
