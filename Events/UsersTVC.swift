@@ -15,16 +15,15 @@ class UsersTVC: UITableViewController {
         super.viewDidAppear(animated)
         Alamofire.request(RandomUserRouter.GetUser(1))
             .responseJSON { (_, response, result) -> Void in
-                print(result)
-
-                if let responseNotOptional  = response {
-                    print("result not \(responseNotOptional)")
+                switch result {
+                case Result.Success(let value):
+                    print("value \(value) end value")
+                case .Failure(let data, let error):
+                    print("data : \(data) - error \(error)")
                 }
         }
-        
-        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
