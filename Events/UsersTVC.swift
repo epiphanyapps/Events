@@ -7,17 +7,22 @@
 //
 
 import UIKit
+import Alamofire
 
 class UsersTVC: UITableViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        Alamofire.request(RandomUserRouter.GetUser(1))
+            .responseJSON { (_, response, result) -> Void in
+                print(result)
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+                if let responseNotOptional  = response {
+                    print("result not \(responseNotOptional)")
+                }
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

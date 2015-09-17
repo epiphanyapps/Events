@@ -12,7 +12,7 @@ import Alamofire
 enum RandomUserRouter : URLRequestConvertible {
     static let baseURLString = "https://randomuser.me/api/"
     
-    case GetUser
+    case GetUser(Int)
     
     var method: Alamofire.Method {
         switch self {
@@ -21,18 +21,16 @@ enum RandomUserRouter : URLRequestConvertible {
         }
     }
     
-    var path: String {
-        switch self {
-        case .GetUser:
-            return ""
-        }
+    
+    var parameters: [String: AnyObject] {
+        return ["results": 200]
     }
     
     // MARK: URLRequestConvertible
     
     var URLRequest: NSMutableURLRequest {
         let URL = NSURL(string: RandomUserRouter.baseURLString)!
-        let mutableURLRequest = NSMutableURLRequest(URL: URL.URLByAppendingPathComponent(path))
+        let mutableURLRequest = NSMutableURLRequest(URL: URL)
         mutableURLRequest.HTTPMethod = method.rawValue
         
         switch self {
