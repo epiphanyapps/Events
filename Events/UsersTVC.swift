@@ -10,16 +10,16 @@ import UIKit
 import Alamofire
 
 class UsersTVC: UITableViewController {
-
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         Alamofire.request(RandomUserRouter.GetUser(1))
-            .responseJSON { (_, response, result) -> Void in
-                switch result {
-                case Result.Success(let value):
-                    print("value \(value) end value")
-                case .Failure(let data, let error):
-                    print("data : \(data) - error \(error)")
+            .responseJSON { (response) -> Void in
+                switch response.result {
+                case .Success(let value):
+                    print("SUCCESS: \(value)")
+                case .Failure(let error):
+                    print("FAILURE: \(error)")
                 }
         }
     }

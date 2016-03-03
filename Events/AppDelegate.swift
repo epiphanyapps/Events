@@ -49,10 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 */
         Alamofire.request(ParseRouter.DestroySession("YlAg6P4r1c"))
-                    .responseJSON { (_, _, result) -> Void in
-                        print("did delete \(result)")
+                    .responseJSON { (response) -> Void in
         }
-        
         return true
     }
     

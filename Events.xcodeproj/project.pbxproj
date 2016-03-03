@@ -81,6 +81,8 @@
 
 /* Begin PBXFileReference section */
 		04A27B9DFCF41A1C7D2D796E /* Pods_EventsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0614879B9BFF475CA50591A2 /* Pods-EventsData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsData.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsData/Pods-EventsData.release.xcconfig"; sourceTree = "<group>"; };
+		10F77ABE0B295A0C166C90B7 /* Pods-EventsData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsData/Pods-EventsData.debug.xcconfig"; sourceTree = "<group>"; };
 		750D68951B5E6F2B00E11917 /* UsersTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTVC.swift; sourceTree = "<group>"; };
 		755AA0981B4851C600AED032 /* EventsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsData.swift; sourceTree = "<group>"; };
 		755D04431AED2F7800541640 /* EventsData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventsData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,11 +111,9 @@
 		75E1ED5C1AF6E2490002F9E7 /* Events.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Events.entitlements; sourceTree = "<group>"; };
 		75E1ED611AF6EDBC0002F9E7 /* Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parse.swift; sourceTree = "<group>"; };
 		75E464CB1B5BF669007E7531 /* RandonUserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandonUserAPI.swift; sourceTree = "<group>"; };
-		7EC808657EDE851BA2E8D48C /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
-		815FD9E9E7356C9778E620FB /* Pods-EventsData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsData/Pods-EventsData.debug.xcconfig"; sourceTree = "<group>"; };
 		B572C42A7EB54E360D5C9C2E /* Pods_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E43E947B9AA22E46CED6712D /* Pods-EventsData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsData.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsData/Pods-EventsData.release.xcconfig"; sourceTree = "<group>"; };
-		E8ABFB051CC94093D2F20DAA /* Pods-Events.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.release.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.release.xcconfig"; sourceTree = "<group>"; };
+		C584CD925BE492E77D15DDAD /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
+		F6750B8B57B783DDB845E7AB /* Pods-Events.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.release.xcconfig"; path = "Pods/Target Support Files/Pods-Events/Pods-Events.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,10 +280,10 @@
 		C34E35A061C202AEA3C0DDD2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7EC808657EDE851BA2E8D48C /* Pods-Events.debug.xcconfig */,
-				E8ABFB051CC94093D2F20DAA /* Pods-Events.release.xcconfig */,
-				815FD9E9E7356C9778E620FB /* Pods-EventsData.debug.xcconfig */,
-				E43E947B9AA22E46CED6712D /* Pods-EventsData.release.xcconfig */,
+				C584CD925BE492E77D15DDAD /* Pods-Events.debug.xcconfig */,
+				F6750B8B57B783DDB845E7AB /* Pods-Events.release.xcconfig */,
+				10F77ABE0B295A0C166C90B7 /* Pods-EventsData.debug.xcconfig */,
+				0614879B9BFF475CA50591A2 /* Pods-EventsData.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -606,7 +606,7 @@
 /* Begin XCBuildConfiguration section */
 		755D045C1AED2F7800541640 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 815FD9E9E7356C9778E620FB /* Pods-EventsData.debug.xcconfig */;
+			baseConfigurationReference = 10F77ABE0B295A0C166C90B7 /* Pods-EventsData.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -624,6 +624,7 @@
 				);
 				INFOPLIST_FILE = EventsData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.epiphanyapps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,7 +637,7 @@
 		};
 		755D045D1AED2F7800541640 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E43E947B9AA22E46CED6712D /* Pods-EventsData.release.xcconfig */;
+			baseConfigurationReference = 0614879B9BFF475CA50591A2 /* Pods-EventsData.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -650,6 +651,7 @@
 				);
 				INFOPLIST_FILE = EventsData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.epiphanyapps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -772,7 +774,7 @@
 		};
 		75D339591AECDE4D00D46E36 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EC808657EDE851BA2E8D48C /* Pods-Events.debug.xcconfig */;
+			baseConfigurationReference = C584CD925BE492E77D15DDAD /* Pods-Events.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Events/Events.entitlements;
@@ -788,7 +790,7 @@
 		};
 		75D3395A1AECDE4D00D46E36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8ABFB051CC94093D2F20DAA /* Pods-Events.release.xcconfig */;
+			baseConfigurationReference = F6750B8B57B783DDB845E7AB /* Pods-Events.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Events/Events.entitlements;
